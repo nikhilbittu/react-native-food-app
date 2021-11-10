@@ -4,7 +4,7 @@ import Ionic from 'react-native-vector-icons/Ionicons';
 import Feather from 'react-native-vector-icons/Feather';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import {ProfileBody, ProfileButtons} from './ProfileBody';
-import {FriendsProfileData} from './Database';
+// import {FriendsProfileData} from './Database';
 
 const FriendProfile = ({route, navigation}) => {
   const {name, profileImage, follow, post, followers, following} = route.params;
@@ -43,7 +43,7 @@ const FriendProfile = ({route, navigation}) => {
         followers={followers}
         following={following}
       />
-      <ProfileButtons id={1} />
+      {/* <ProfileButtons id={1} /> */}
       <Text
         style={{
           paddingVertical: 10,
@@ -58,12 +58,12 @@ const FriendProfile = ({route, navigation}) => {
         style={{
           paddingTop: 10,
         }}>
-        {name === FriendProfile.name
+        {/* {name === FriendProfile.name
           ? null
           : FriendsProfileData.map((data, index) => {
               const [isFollow, setIsFollow] = useState(false);
-              const [close, setClose] = useState(false);
-              return (
+              const [close, setClose] = useState(false); */}
+              {/* return (
                 <View key={index}>
                   {data.name === name || close ? null : (
                     <View
@@ -130,7 +130,7 @@ const FriendProfile = ({route, navigation}) => {
                   )}
                 </View>
               );
-            })}
+            })} */}
       </ScrollView>
     </View>
   );
