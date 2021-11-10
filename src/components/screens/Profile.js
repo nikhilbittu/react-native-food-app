@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     backgroundColor: "black",
     paddingLeft:0,
     width:100,
-    left:280,
+    left:260,
     top:30
   },
 });
